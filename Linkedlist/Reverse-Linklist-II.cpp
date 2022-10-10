@@ -19,8 +19,7 @@ public:
         for(int i=0;i<=left;i++)
         {
             leftPrev=leftprev;
-            cur=cur->next;
-                        
+            cur=cur->next;            
         }
 
         // while (count != left) // reaching to left
