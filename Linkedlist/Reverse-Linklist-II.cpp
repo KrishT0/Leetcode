@@ -16,10 +16,10 @@ public:
         dummy->next = head;
         cur = head;
 
-        for(int i=0;i<=left;i++)
+        for (int i = 0; i <= left; i++)
         {
-            leftPrev=leftprev;
-            cur=cur->next;            
+            leftPrev = leftprev;
+            cur = cur->next;
         }
 
         // while (count != left) // reaching to left
