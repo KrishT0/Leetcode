@@ -5,14 +5,14 @@ public:
     {
         ListNode *fast, *slow;
         fast = slow = head;
-        if (fast == NULL)
+        if (fast == NULL) //if no loop
             return false;
-        while (fast && fast->next)
+        while (fast && fast->next) 
         {
             fast = fast->next->next;
             slow = slow->next;
             if (fast == slow)
-                return true;
+                return true; //found loop
         }
         return false;
     }
