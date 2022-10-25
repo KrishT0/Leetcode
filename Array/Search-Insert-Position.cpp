@@ -1,7 +1,7 @@
 class Solution
 {
 public:
-    int searchInsert(vector<int> &nums, int target)
+    int searchInsert(vector<int> &nums, int target) 
     {
         int low = 0;
         int high = nums.size() - 1;
@@ -20,3 +20,5 @@ public:
         return low;
     }
 };
+
+//Kind of modified binary search
