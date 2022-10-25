@@ -18,3 +18,5 @@ public:
         return candidate;
     }
 };
+
+// Boyer-Moore Majority Voting Algorithm
