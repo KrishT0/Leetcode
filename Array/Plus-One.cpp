@@ -7,7 +7,7 @@ public:
 
         while (i >= 0)
         {
-            if (digits[i] < 9)
+            if (digits[i] < 9) //check for carry
             {
                 digits[i] += 1;
                 return digits;
