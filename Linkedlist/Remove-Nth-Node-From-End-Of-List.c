@@ -5,8 +5,8 @@ struct ListNode *removeNthFromEnd(struct ListNode *head, int n)
     for (int i = 0; i < n; i++)
         fast = fast->next;
 
-    if (fast == NULL)
-        return head->next;
+    if (!fast)
+        return head->next;  //if fast becomes null then, n must be at max. so 1st node should be deleted.
 
     fast = fast->next;
     while (fast)
