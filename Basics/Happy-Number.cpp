@@ -17,7 +17,7 @@ public:
             }
             if (val == 1)
                 return true;
-            else if (result.find(val) != result.end())
+            else if (result.find(val) != result.end())  //to check if value present in set or not.
                 return false;
 
             result.insert(val);
