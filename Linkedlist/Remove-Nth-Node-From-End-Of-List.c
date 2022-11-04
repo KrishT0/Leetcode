@@ -6,7 +6,7 @@ struct ListNode *removeNthFromEnd(struct ListNode *head, int n)
         fast = fast->next;
 
     if (!fast)
-        return head->next;  //if fast becomes null then, n must be at max. so 1st node should be deleted.
+        return head->next; // if fast becomes null then, n must be at max. so 1st node should be deleted.
 
     fast = fast->next;
     while (fast)
@@ -14,6 +14,6 @@ struct ListNode *removeNthFromEnd(struct ListNode *head, int n)
         fast = fast->next;
         slow = slow->next;
     }
-    slow->next = slow-> next->next;
+    slow->next = slow->next->next;
     return head;
 }
