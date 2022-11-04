@@ -14,6 +14,6 @@ struct ListNode *removeNthFromEnd(struct ListNode *head, int n)
         fast = fast->next;
         slow = slow->next;
     }
-    slow->next = slow->next->next;
+    slow->next = slow-> next->next;
     return head;
 }
