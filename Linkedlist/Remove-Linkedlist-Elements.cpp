@@ -6,7 +6,7 @@ public:
         if (head == NULL)
             return head;
 
-        while (head && head->val == val)
+        while (head && head->val == val) //head value removal
         {
             head = head->next;
         }
