@@ -38,7 +38,7 @@ public:
                     ans.push_back(A[i][left]);
                 left++;
             }
-            dir = (dir + 1) % 4; // so that doirect should not exceed 3
+            dir = (dir + 1) % 4; // so that direction should not exceed 3.
         }
         return ans;
     }
