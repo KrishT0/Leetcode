@@ -6,7 +6,7 @@ public:
         if (head == NULL || head->next == NULL)
             return head;
 
-        ListNode *ptr = head;
+        ListNode *ptr = head; // using single pointer
         while (ptr->next)
         {
             if (ptr->val == ptr->next->val)
