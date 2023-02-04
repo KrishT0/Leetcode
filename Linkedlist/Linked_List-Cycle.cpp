@@ -3,17 +3,21 @@ class Solution
 public:
     bool hasCycle(ListNode *head)
     {
+        if (head == NULL)
+            return head;
+
         ListNode *fast, *slow;
         fast = slow = head;
-        if (fast == NULL) //if no loop
-            return false;
-        while (fast && fast->next) 
+
+        while (fast && fast->next)
         {
-            fast = fast->next->next;
             slow = slow->next;
-            if (fast == slow)
-                return true; //found loop
+            fast = fast->next->next;
+
+            if (slow == fast)
+                return true;
         }
+
         return false;
     }
 };
