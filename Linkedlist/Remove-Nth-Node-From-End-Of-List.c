@@ -1,19 +1,25 @@
-struct ListNode *removeNthFromEnd(struct ListNode *head, int n)
-{
-    struct ListNode *fast, *slow;
-    fast = slow = head;
-    for (int i = 0; i < n; i++)
-        fast = fast->next;
-
-    if (!fast)
-        return head->next; // if fast becomes null then, n must be at max. so 1st node should be deleted.
-
-    fast = fast->next;
-    while (fast)
-    {
-        fast = fast->next;
-        slow = slow->next;
+class Solution {
+public:
+    ListNode* removeNthFromEnd(ListNode* head, int n) {
+        ListNode *front, *back;
+        front=back=head;
+        
+        while(n>0) 
+        {
+            front=front->next;
+            n--;
+        }
+        
+        if(!front) //if front is NULL then, we havr to delete head.
+            return head->next;
+        
+        while(front->next)
+        {
+            front=front->next;
+            back=back->next;
+        }
+        
+        back->next=back->next->next;
+        return head;
     }
-    slow->next = slow->next->next;
-    return head;
-}
+};
