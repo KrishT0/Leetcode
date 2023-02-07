@@ -4,24 +4,15 @@ public:
      vector<int> shuffle(vector<int> &nums, int n)
      {
           vector<int> ans;
-          int i, j, count;
+          int i, j;
           i = 0;
           j = n;
-          count = 1;
-          while (i <= n && j < (2 * n))
+          while (j < (2 * n))
           {
-               if (count % 2 != 0)
-               {
-                    ans.emplace_back(nums[i]);
-                    i++;
-                    count++;
-               }
-               else
-               {
-                    ans.emplace_back(nums[j]);
-                    j++;
-                    count++;
-               }
+               ans.emplace_back(nums[i]);
+               i++;
+               ans.emplace_back(nums[j]);
+               j++;
           }
 
           return ans;
