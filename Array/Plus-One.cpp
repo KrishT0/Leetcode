@@ -15,7 +15,6 @@ public:
             else
                 digits[i--] = 0;
         }
-        digits.insert(digits.begin(), 1); // here 1 is inserted at begining
-        return digits;
+        digits.insert(digits.begin(), 1); // to insert 1 at the begining of the vector
     }
 };
