@@ -7,7 +7,7 @@ public:
 
         while (i >= 0)
         {
-            if (digits[i] < 9) //check for carry
+            if (digits[i] < 9) // check for carry
             {
                 digits[i] += 1;
                 return digits;
@@ -15,7 +15,6 @@ public:
             else
                 digits[i--] = 0;
         }
-        digits.insert(digits.begin(), 1); // to insert 1 at begining of verctor
-        return digits;
+        digits.insert(digits.begin(), 1); // to insert 1 at the begining of the vector
     }
 };
