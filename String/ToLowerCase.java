@@ -5,12 +5,10 @@ class Solution {
             if(Character.isUpperCase(c)){
                 result = result + Character.toLowerCase(c);
             }
-
             else {
                 result+=c;
             }
         }
-
         return result;
     }
 }
