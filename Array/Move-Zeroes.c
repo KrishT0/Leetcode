@@ -1,3 +1,4 @@
+ // brute force
 void moveZeroes(int *nums, int n)
 {
 
@@ -23,7 +24,7 @@ void moveZeroes(int *nums, int n)
             j++;
         }
     }
-} // brute force
+}
 
 // snowball algo
 void moveZeroes(int *nums, int n)
